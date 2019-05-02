@@ -250,9 +250,19 @@ img {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  width: 30%;
+  align-self: center;
+  width: 80%;
   margin-bottom: 30px;
+}
+.home .content-pick div .btn {
+  border-radius: 8px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
 }
