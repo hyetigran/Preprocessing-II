@@ -1,1 +1,32 @@
 // Navigation Styles here
+
+.header {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 20px;
+	div {
+		width: 100%;
+		// margin: 10px 0;
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		justify-content: space-around;
+		border-bottom: 2px dashed @navigation-border;
+		font-size: 2rem;
+		padding: 10px;
+		& a {
+			text-decoration: none;
+			color: grey;
+		}
+	}
+
+	h1 {
+		text-align: center;
+	}
+	p {
+		border-bottom: 2px dashed @navigation-border;
+	}
+}
