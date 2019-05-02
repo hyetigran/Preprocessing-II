@@ -174,7 +174,7 @@ img {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .header div {
   width: 100%;
@@ -193,6 +193,14 @@ img {
 }
 .header p {
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (min-width: 501px) {
+  .header {
+    flex-flow: row wrap;
+  }
+  div {
+    width: 47%;
+  }
 }
 .footer {
   width: 100%;
