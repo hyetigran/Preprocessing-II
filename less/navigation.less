@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+.header {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+
+	div {
+		width: 100%;
+		// margin: 10px 0;
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		justify-content: space-around;
+		border-bottom: 2px dashed @navigation-border;
+		font-size: 2rem;
+		padding: 10px;
+		& a {
+			text-decoration: none;
+			color: grey;
+		}
+	}
+
+	p {
+		border-bottom: 2px dashed @navigation-border;
+	}
+}
+@media (min-width: 501px) {
+	.header {
+		flex-flow: row wrap;
+	}
+	div {
+		width: 47%;
+	}
+}

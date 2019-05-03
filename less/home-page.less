@@ -1,61 +1,73 @@
+.container.home {
+	margin: 0 20px 0 20px;
+}
 .home {
+	.content-section {
+		margin: 30px 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+		.text-content {
+			width: 100%;
+			padding-right: 1%;
+		}
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
+		.img-content {
+			width: 100%;
+			padding-left: 1%;
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+			img {
+				border-radius: 10px;
+			}
+		}
+	}
+	.inverse-content {
+		flex-flow: column-reverse;
+		padding-bottom: 30px;
+		border-bottom: 2px dashed @navigation-border;
 
-      img {
-        border-radius: 10px;
-      }
-    }
-  }
+		.text-content {
+			padding-left: 1%;
+			padding-right: 0;
+		}
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+		.img-content {
+			padding-right: 1%;
+			padding-left: 0;
+		}
+	}
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
+	.content-destination {
+		width: 95%;
+		margin: 0 auto 30px;
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
+		img {
+			border-radius: 10px;
+		}
+	}
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+	.content-pick {
+		padding-top: 30px;
+		border-top: 2px dashed @navigation-border;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
 
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-  }
-}// home
+		.destination {
+			align-self: center;
+			width: 80%;
+			margin-bottom: 30px;
+		}
+		div .btn {
+			border-radius: 8px;
+			background-color: @eastern-blue;
+			color: @white;
+			font-size: 20px;
+			text-align: center;
+			padding: 10px 0;
+		}
+	}
+	@media (min-width: 500px) {
+	}
+} // home
